@@ -48,5 +48,11 @@
     - Compare changes in a specific file between branches -> git diff [BRANCH 1]..[BRANCH 2] [FILE NAME]
     - Compare changes between two commits -> git diff [COMMIT 1]..[COMMIT 2]
 
-    d9b272514b3e41f8f31b78b5e4cf56b000af25d5
-    389a1397b6336237e95e61754b80723665591609
+6. STASHING
+    - Temporarily save changes without committing -> git stash
+    - Move previously stashed changes back into the working directory -> git stash pop
+    - Apply previously stashed changes without removing them from the stash
+    - View all stashed items and their numbers -> git stash list
+    - Apply a specific stashed item -> git stash apply stash@{[STASH NUMBER]}
+    - Delete a specific stashed item from the stash list -> git stash drop stash@{[STASH NUMBER]}
+    - Delete all stashed items from the stash list -> git stash clear stash@{[STASH NUMBER]}
