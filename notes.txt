@@ -1,0 +1,52 @@
+1. INSTALLATION AND CONFIGURATION
+    - Install or update Git -> sudo apt-get install git
+    - View Git version -> git --version
+    - Set up username -> git config --global user.name [NAME]
+    - Set up email -> git config --global user.email [EMAIL]
+    - Set up VS Code as default Git editor -> git config --global core.editor "code --wait"
+
+2. TERMINAL FUNDAMENTALS
+    - List directory contents -> ls
+    - List directory contents including hidden files and folders -> ls -a
+    - Print current directory path -> pwd
+    - Change directory -> cd [LOCATION]
+    - Create a file -> touch [FILE1 FILE2 FILE3 ETC.]
+    - Create a directory -> mkdir [DIRECTORY1 DIRECTORY2 DIRECTORY3 ETC.]
+    - Delete a file -> rm [FILE1 FILE2 FILE3 ETC.]
+    - Delete a directory -> rm -rf [DIRECTORY1 DIRECTORY2 DIRECTORY3 ETC.]
+
+3. ADDING AND COMMITTING
+    - Initiate a repository -> git init
+    - Terminate a repository -> rm -rf .git
+    - WORKING DIRECTORY vs STAGING AREA vs REPOSITORY
+    - View repository status -> git status
+    - Stage files and folders for commit -> git add [FILE1 FOLDER1 FILE2 ETC.]
+    - Stage all files and folders for commit -> git add
+    - Commit all staged files with a description message -> git commit -m [MESSAGE]
+    - Commit staged files with a long commit message -> git commit
+    - View simplified Git log -> git log --oneline
+    - Correct the last commit -> git commit --amend
+    - Force Git to ignore a file -> .gitignore file
+
+4. BRANCHING
+    - View all branches -> git branch
+    - Create a new branch -> git branch [BRANCH NAME]
+    - Switch to a specific branch -> git switch [BRANCH NAME]
+    - Create and switch to a new branch in one go -> git switch -c [BRANCH NAME]
+    - Delete a branch -> git branch -d [BRANCH NAME]
+    - Rename a branch -> git branch -m [NEW BRANCH NAME]
+
+5. MERGING
+    - Perform a fast forward merge
+        1. git branch [DESTINATION BRANCH]
+        2. git merge [ORIGIN BRANCH]
+    - View all unstaged changes -> git diff
+    - View all staged and unstaged changes -> git diff HEAD
+    - View all staged changes -> git diff --staged
+    - View changes in a particular file -> git diff [FILE NAME] / git diff HEAD [FILE NAME] / git diff --staged [FILE NAME]
+    - Compare changes between two branches -> git diff [BRANCH 1]..[BRANCH 2]
+    - Compare changes in a specific file between branches -> git diff [BRANCH 1]..[BRANCH 2] [FILE NAME]
+    - Compare changes between two commits -> git diff [COMMIT 1]..[COMMIT 2]
+
+    d9b272514b3e41f8f31b78b5e4cf56b000af25d5
+    389a1397b6336237e95e61754b80723665591609
