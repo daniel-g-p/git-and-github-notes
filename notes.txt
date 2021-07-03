@@ -55,4 +55,24 @@
     - View all stashed items and their numbers -> git stash list
     - Apply a specific stashed item -> git stash apply stash@{[STASH NUMBER]}
     - Delete a specific stashed item from the stash list -> git stash drop stash@{[STASH NUMBER]}
-    - Delete all stashed items from the stash list -> git stash clear stash@{[STASH NUMBER]}
+    - Delete all stashed items from the stash list -> git stash clear
+
+7. CHECKING OUT AND RESTORING
+    - View a past commit (detach HEAD) -> git checkout [COMMIT HASH]
+    - Go back to the latest commit -> git switch [BRANCH]
+    - Branch off of a past commit
+        1. git checkout [COMMIT HASH]
+        2. git branch [BRANCH NAME]
+    - View a past commit relative to HEAD -> git checkout HEAD~[NUMBER OF STEPS]
+    - Reattach HEAD to the most recent branch -> git switch -
+    - Restore the last commit and delete all working directory changes -> git checkout HEAD [FILE NAME] / git restore [FILE NAME]
+    - Restore the files to a specific commit -> git restore --source [COMMIT REFERENCE] [FILE NAME]
+    - Remove staged files from the staging area -> git restore --staged [FILE NAME]
+    - Reset to a past commit without losing the current changes -> git reset [COMMIT HASH]
+    - Reset to a past commit and delete the current changes -> git reset --hard [COMMIT HASH]
+    - Revert new changes to a past commit by making a new commit -> git revert [COMMIT HASH]
+
+8. GITHUB BASICS
+    - Download a local copy of a remot repository -> git clone [REPOSITORY URL]
+    - Check for existing SSH keys -> ls -al ~/.ssh
+    - Generate a new SSH key -> GitHub instructions
