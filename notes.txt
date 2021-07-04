@@ -73,6 +73,6 @@
     - Revert new changes to a past commit by making a new commit -> git revert [COMMIT HASH]
 
 8. GITHUB BASICS
-    - Download a local copy of a remot repository -> git clone [REPOSITORY URL]
+    - Download a local copy of a remote repository -> git clone [REPOSITORY URL]
     - Check for existing SSH keys -> ls -al ~/.ssh
     - Generate a new SSH key -> GitHub instructions
