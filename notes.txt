@@ -76,3 +76,15 @@
     - Download a local copy of a remote repository -> git clone [REPOSITORY URL]
     - Check for existing SSH keys -> ls -al ~/.ssh
     - Generate a new SSH key -> GitHub instructions
+    - Check for remote repositories -> git remote
+    - Add a new remote to a repository -> git remote add [REMOTE NAME] [URL]
+    - Push a local branch to a remote repository -> git push [REMOTE NAME] [BRANCH NAME]
+    - Push a local branch to a remote branch with a different name -> git push [REMOTE NAME] [LOCAL BRANCH]:[REMOTE BRANCH]
+    - Link a local branch to a remote -> git push -u [REMOTE NAME] [LOCAL BRANCH]
+    - Set up a repository on GitHub first -> git clone [REMOTE URL]
+    - View remote branches -> git branch -r
+    - Switch to a remote branch that doesn't yet exist locally -> git switch [BRANCH NAME]
+    - Fetch all changes of a remote without disrupting the working directory -> git fetch
+    - Fetch changes of a specific remote branch -> git fetch [REMOTE BRANCH NAME]
+    - Automatically pull a remote branch with the same name as the working directory branch -> git pull
+    - Merge changes from a remote to the current branch -> git pull [REMOTE NAME] [BRANCH NAME]
