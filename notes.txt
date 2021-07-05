@@ -106,4 +106,14 @@
         ```
     - Link -> [[LINK TEXT]] ([URL])
     - Image -> ![ALT TEXT] (URL)
-    
+
+10. PROJECT WORKFLOWS
+    - Centralized -> Everybody working on the same branch
+    - Feature branching -> Every change is made on a separate branch and then merged into the main branch upon approval
+    - Forking and cloning -> All changes are made in entirely separate repositories, one for each team member
+    - Resolving conflicts in pull requests:
+        1. Pull the latest version of all branches from origin
+        2. Merge main into the secondary branch -> git merge --no-ff main
+        3. Resolve merge conflicts locally
+        4. Switch to main branch -> git switch main
+        5. Merge the branch into main -> git merge [BRANCH]
