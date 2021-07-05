@@ -88,3 +88,22 @@
     - Fetch changes of a specific remote branch -> git fetch [REMOTE BRANCH NAME]
     - Automatically pull a remote branch with the same name as the working directory branch -> git pull
     - Merge changes from a remote to the current branch -> git pull [REMOTE NAME] [BRANCH NAME]
+
+9. MARKDOWN
+    - 6 heading levels based on "#" (#, ##, ###, ####, #####, ######)
+    - Line separator -> *** (or more asterisks for a longer line)
+    - Bold text -> **[TEXT]**
+    - Italic text -> *[Italic]*
+    - Blockquote -> > [BLOCKQUOTE] (more ">" for nested blockquotes)
+    - List item -> * [ITEM] (indented line for multi-level lists)
+    - Single line of code -> `[CODE]`
+    - Code block -> ```[CODE]```
+    - e.g.: 
+        ``` js
+        CODE LINE
+        CODE LINE
+        CODE LINE
+        ```
+    - Link -> [[LINK TEXT]] ([URL])
+    - Image -> ![ALT TEXT] (URL)
+    
