@@ -117,3 +117,14 @@
         3. Resolve merge conflicts locally
         4. Switch to main branch -> git switch main
         5. Merge the branch into main -> git merge [BRANCH]
+
+11. REBASING
+    - Rebase a branch to the tip of another branch
+        1. git switch [BRANCH]
+        2. git rebase [MAIN BRANCH]
+    - Resolve conflicts resulting from a rebase
+        1. git rebase [BRANCH]
+        2. Resolve conflicts in code editor
+        3. git add .
+        4. git rebase --continue
+    - Cancel conflictive rebase -> git rebase --abort
