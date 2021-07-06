@@ -128,3 +128,4 @@
         3. git add .
         4. git rebase --continue
     - Cancel conflictive rebase -> git rebase --abort
+    - Initiate interactive rebase -> git rebase -i [COMMIT REFERENCE]
