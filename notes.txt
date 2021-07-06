@@ -78,6 +78,7 @@
     - Generate a new SSH key -> GitHub instructions
     - Check for remote repositories -> git remote
     - Add a new remote to a repository -> git remote add [REMOTE NAME] [URL]
+    - Delete remote -> git remote rm [REMOTE NAME]
     - Push a local branch to a remote repository -> git push [REMOTE NAME] [BRANCH NAME]
     - Push a local branch to a remote branch with a different name -> git push [REMOTE NAME] [LOCAL BRANCH]:[REMOTE BRANCH]
     - Link a local branch to a remote -> git push -u [REMOTE NAME] [LOCAL BRANCH]
@@ -129,3 +130,16 @@
         4. git rebase --continue
     - Cancel conflictive rebase -> git rebase --abort
     - Initiate interactive rebase -> git rebase -i [COMMIT REFERENCE]
+
+12. TAGGING
+    - List all tags -> git tag
+    - List all tags that follow a certain pattern -> git tag -l "[PATTERN]" (e.g. git tag -l "v15*")
+    - Check out a past commit using a tag reference -> git checkout [TAG]
+    - Diff two commits using their tag reference -> git diff [TAG1] [TAG2]
+    - Create a lightweight tag pointing to wherever HEAD is -> git tag [TAG NAME]
+    - Create an annotated tag pointing to wherever HEAD is -> git tag -a [TAG NAME]
+    - Tag a past commit -> git tag [TAG NAME] [COMMIT REFERENCE]
+    - Force a tag change -> git tag -f [TAG NAME] [COMMIT REFERENCE]
+    - Delete a tag -> git tag -d [TAG NAME]
+    - Push a tag to a remote -> git push [REMOTE] [TAG NAME]
+    - Push all tags to a remote -> git push [REMOTE] --tags
