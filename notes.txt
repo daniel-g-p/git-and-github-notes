@@ -143,3 +143,12 @@
     - Delete a tag -> git tag -d [TAG NAME]
     - Push a tag to a remote -> git push [REMOTE] [TAG NAME]
     - Push all tags to a remote -> git push [REMOTE] --tags
+
+13. GIT BEHIND THE SCENES
+    - Git stores everything in the form of hashes using SHA-1
+    - Retrieve the contents and references of a stored item -> git cat-file -p [FILE]
+    - Retrieve the type of a stored item -> git cat-file -t [FILE]
+    - Git object types: commits, trees, blobs, tags
+    - Every commit points to a tree (folder), which in turn points to more trees and blobs
+    - With every commit, git encrypts all files, stores them as blobs, and references them using trees to compress the directory
+    - At any later point, the directory can be reconstructed using those files in the .git/objects folder
