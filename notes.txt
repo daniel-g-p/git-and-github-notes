@@ -4,6 +4,7 @@
     - Set up username -> git config --global user.name [NAME]
     - Set up email -> git config --global user.email [EMAIL]
     - Set up VS Code as default Git editor -> git config --global core.editor "code --wait"
+    - Modify any global setting in .gitconfig -> git config --global [CATEGORY].[PROPERTY] [VALUE]
 
 2. TERMINAL FUNDAMENTALS
     - List directory contents -> ls
@@ -152,3 +153,8 @@
     - Every commit points to a tree (folder), which in turn points to more trees and blobs
     - With every commit, git encrypts all files, stores them as blobs, and references them using trees to compress the directory
     - At any later point, the directory can be reconstructed using those files in the .git/objects folder
+
+14. REFLOGS
+    - Git tracks all changes to references (e.g. HEAD changing to another commit)
+    - List a full reference log -> git reflog show [REFERENCE]
+    - Go back a certain number of steps in the reflog -> git reflog show HEAD@{[NUMBER OF STEPS]}
